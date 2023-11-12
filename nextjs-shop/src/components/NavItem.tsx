@@ -4,6 +4,7 @@ import React from "react";
 
 const NavItem = ({ mobile }: { mobile?: boolean }) => {
   const { data: session, status } = useSession();
+  console.log(session);
 
   return (
     <ul
