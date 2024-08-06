@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+type Repo = {
+  name: string;
+  stargazers_count: number;
+};
 
 export default function Home() {
   return (
