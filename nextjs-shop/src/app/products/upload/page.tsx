@@ -2,6 +2,7 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
+import ImageUpload from "@/components/ImageUpload";
 import Input from "@/components/Input";
 import React, { useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
@@ -35,6 +36,8 @@ const ProductUploadPage = () => {
       <div className="max-w-screen-lg mx-auto ">
         <form className="flex flex-col gap-8" onSubmit={handleSubmit(onSubmit)}>
           <Heading title="Product Upload" subtitle="upload your product" />
+
+          <ImageUpload />
 
           <Input
             id="title"
